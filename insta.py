@@ -4,7 +4,13 @@
 
 #                        Import Module
 
-import json , sys , hashlib , os , time , marshal, getpass
+import json
+import sys
+import hashlib
+import os
+import time
+import marshal
+import getpass
 
 ###################################################################
 
@@ -18,7 +24,7 @@ import json , sys , hashlib , os , time , marshal, getpass
 
 #                             COLOR
 
-if sys.platform in ["linux","linux2"]:
+if sys.platform in ["linux","linux2","Windows"]:
 
 	W = "\033[0m"
 
@@ -1020,7 +1026,7 @@ def menu_reaction_ask():
 
 			if cek.lower() != 'y':
 
-				print '[*] Canceling '
+				print '[*] Canceling'
 
 				bot()
 
